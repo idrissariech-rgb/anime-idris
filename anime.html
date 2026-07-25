@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة الأنمي - Anime Slayer Style</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #141414;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1f1f1f;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e50914;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e50914;
+        }
+        .search-box input {
+            padding: 8px 15px;
+            width: 250px;
+            border-radius: 5px;
+            border: none;
+            background-color: #333;
+            color: white;
+        }
+        .container {
+            padding: 30px;
+        }
+        h2 {
+            border-right: 4px solid #e50914;
+            padding-right: 10px;
+            margin-bottom: 20px;
+        }
+        .anime-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .anime-card {
+            background-color: #1f1f1f;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .anime-card:hover {
+            transform: scale(1.05);
+        }
+        .anime-img {
+            width: 100%;
+            height: 280px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 14px;
+        }
+        .anime-info {
+            padding: 15px;
+            text-align: center;
+        }
+        .anime-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .watch-btn {
+            display: inline-block;
+            background-color: #e50914;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .watch-btn:hover {
+            background-color: #b20710;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">✨ Animeify</div>
+        <div class="search-box">
+            <input type="text" placeholder="ابحث عن أنمي...">
+        </div>
+    </header>
+
+    <div class="container">
+        <h2>أحدث الحلقات المضافة</h2>
+        
+        <div class="anime-grid">
+            <!-- بطاقة أنمي 1 -->
+            <div class="anime-card">
+                <div class="anime-img">صورة الأنمي 1</div>
+                <div class="anime-info">
+                    <div class="anime-title">Demon Slayer</div>
+                    <a href="#" class="watch-btn">مشاهدة الحلقة</a>
+                </div>
+            </div>
+
+            <!-- بطاقة أنمي 2 -->
+            <div class="anime-card">
+                <div class="anime-img">صورة الأنمي 2</div>
+                <div class="anime-info">
+                    <div class="anime-title">Attack on Titan</div>
+                    <a href="#" class="watch-btn">مشاهدة الحلقة</a>
+                </div>
+            </div>
+
+            <!-- بطاقة أنمي 3 -->
+            <div class="anime-card">
+                <div class="anime-img">صورة الأنمي 3</div>
+                <div class="anime-info">
+                    <div class="anime-title">One Piece</div>
+                    <a href="#" class="watch-btn">مشاهدة الحلقة</a>
+                </div>
+            </div>
+
+            <!-- بطاقة أنمي 4 -->
+            <div class="anime-card">
+                <div class="anime-img">صورة الأنمي 4</div>
+                <div class="anime-info">
+                    <div class="anime-title">Jujutsu Kaisen</div>
+                    <a href="#" class="watch-btn">مشاهدة الحلقة</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
